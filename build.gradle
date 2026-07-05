@@ -28,7 +28,7 @@ sourceSets.main.resources {
 
 repositories {
     maven { url = "https://maven.createmod.net" }
-
+    maven { url = "https://maven.ithundxr.dev/snapshots" }
     maven {
         url = "https://cursemaven.com"
         content {
@@ -125,9 +125,9 @@ configurations {
 }
 
 dependencies {
+    implementation("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation files(
             "libs/create-1.21.1-6.0.10.jar",
-            "libs/create-stuff-additions1.21.1_v2.1.3.jar",
             "libs/alltheores-3.2.0_neoforge_1.21.1.jar",
             "libs/allthemodium-3.0.0_mc_1.21.1.jar",
             "libs/geckolib-neoforge-1.21.1-4.8.4.jar"
